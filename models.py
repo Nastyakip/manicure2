@@ -8,27 +8,27 @@ class Clients:
     def to_dict(self):
         return {
             'id': self.id,
-            'title': self.name,
-            'description': self.phone,
-            'status': self.note
+            'name': self.name,
+            'phone': self.phone,
+            'note': self.note
         }
 clients1 = Clients(1, 'Мария', '+7 925 000 00 00', 'Аллергия на лак люксио')#вызов класса
 
 class Service:
-        def __init__(self, id, name, duration, price):
-            self.id = id
-            self.name = name
-            self.duration = duration
-            self.price = price
+    def __init__(self, id, name, duration, price):
+        self.id = id
+        self.name = name
+        self.duration = duration
+        self.price = price
 
-        def to_dict(self):
-            return {
-                'id': self.id,
-                'name': self.name,
-                'duration': self.duration,
-                'price': self.price
-            }
-service1 = Service( 1, 'классический маникюр', '60', '1000')
+    def to_dict(self):
+        return {
+            'id': self.id,
+            'name': self.name,
+            'duration': self.duration,
+            'price': self.price
+        }
+service1 = Service( 1, 'классический маникюр', 60, 1000)
 
 
 
